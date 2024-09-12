@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Space Future";
+  src: url(fonts/Space\ Future.ttf);
+}
+
+@font-face {
+  font-family: Dendritic;
+  src: url("fonts/Dendritic.otf") format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", "Roboto", sans-serif;
+}
+
+body {
+  background-image: url();
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+.header h1 {
+  font-family: "Dendritic";
+  color: rgb(232, 245, 252);
+  flex:1;
+}
+
+.navbar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: right;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a{
+  display: block;
+  padding: 6px 14px;
+  border: solid 3px;
+  border-color: rgb(94, 94, 255);
+  color: hsl(0, 41%, 88%);
+  font-weight: 630;
+  font-size: 19px;
+  font-family: "Space Future";
+  border-radius: 14px;
+}
+
+/* Fullscreen background video */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;  /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Ensures video covers the entire area without distorting */
+  z-index: -1; /* Keeps the video behind the content */
+  pointer-events: none; /* Prevents interaction with the video */
+}
+
+/* Content styling */
+.content {
+  position: relative;
+  z-index: 1; /* Keeps the content on top of both the overlay and the video */
+  text-align: center;
+  color: white;
+  padding: 50px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
