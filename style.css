@@ -88,3 +88,31 @@ body {
   font-weight: bold;
 }
 
+.welcome-section {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.welcome-section h2 {
+  font-size: 45px;
+  font-family: "Poppins", "Roboto", sans-serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-section h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Poppins", "Roboto", sans-serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-section .myname {
+  font-family: "Dendritic";
+  font-weight: 300;
+}
