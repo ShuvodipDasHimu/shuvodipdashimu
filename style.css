@@ -22,48 +22,47 @@ body {
   background-image: url();
 }
 
-/* Header styling */
 .header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
 }
+
 
 .header h1 {
   font-family: "Dendritic";
   color: rgb(232, 245, 252);
-  margin-bottom: 10px; /* Space between title and menu */
+  flex:1;
 }
 
 .navbar {
-  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: right;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  flex-direction: column; /* Stack menu items vertically on mobile */
   padding: 0;
   margin: 0;
 }
 
 .navbar ul li {
-  margin: 10px 0; /* Space between menu items on mobile */
+  margin-left: 20px;
 }
 
-.navbar ul li a {
+.navbar ul li a{
   display: block;
-  padding: 10px;
+  padding: 6px 14px;
   border: solid 3px;
   border-color: rgb(94, 94, 255);
   color: hsl(0, 41%, 88%);
   font-weight: 630;
-  font-size: 18px;
+  font-size: 19px;
   font-family: "Space Future";
   border-radius: 14px;
-  text-align: center; /* Center-align text in menu items */
 }
 
 /* Fullscreen background video */
@@ -71,17 +70,17 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  pointer-events: none;
+  width: 100vw;  /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Ensures video covers the entire area without distorting */
+  z-index: -1; /* Keeps the video behind the content */
+  pointer-events: none; /* Prevents interaction with the video */
 }
 
 /* Content styling */
 .content {
   position: relative;
-  z-index: 1;
+  z-index: 1; /* Keeps the content on top of both the overlay and the video */
   text-align: center;
   color: white;
   padding: 50px;
@@ -89,9 +88,8 @@ body {
   font-weight: bold;
 }
 
-/* Welcome section styling */
 .welcome-section {
-  position: absolute;
+  position:absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -117,40 +115,4 @@ body {
 .welcome-section .myname {
   font-family: "Dendritic";
   font-weight: 300;
-}
-
-/* Responsive styles */
-@media only screen and (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column; /* Stack vertically on smaller screens */
-    align-items: center; /* Center menu items horizontally */
-  }
-
-  .navbar ul li {
-    margin: 10px 0;
-  }
-
-  .welcome-section h1 {
-    font-size: 40px; /* Adjust font size for mobile */
-  }
-
-  .welcome-section .myname {
-    font-size: 50px; /* Adjust font size for mobile */
-  }
-
-  /* Hide extra text on smaller screens */
-  .header h1 {
-    display: none; /* Optionally hide the header title on mobile */
-  }
-}
-
-/* Hide extra text and adjust for mobile */
-@media only screen and (max-width: 480px) {
-  .welcome-section h1 {
-    font-size: 30px; /* Further adjust font size for very small screens */
-  }
-
-  .welcome-section .myname {
-    font-size: 40px; /* Further adjust font size for very small screens */
-  }
 }
