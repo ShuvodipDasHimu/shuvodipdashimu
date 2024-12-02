@@ -1,4 +1,4 @@
-## HEHE boii!!! This is my Repository  😎
+## I am a Tech Enthusiast & I graciously welcome you to my Github profile 💪😄
 
 
 
