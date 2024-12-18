@@ -75,9 +75,11 @@ a {
 
 main {
 /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/High-Tech-HD-Wallpapers.jpg); */
+background-color:black;
 height: 100%;
 background-size: cover;
   color: deepskyblue;
+  border: 2px solid deepskyblue;
 }
 
 #hero-text {
@@ -94,6 +96,8 @@ background-size: cover;
 
 .hero-text {
   color: white;
+  margin-left: 40px;
+  margin-top: 2px;
 }
 
 .ai-gen-shuvodip {
