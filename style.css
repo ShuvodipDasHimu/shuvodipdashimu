@@ -130,6 +130,7 @@ margin-top: 70px;
 
 .hero-section {
 display: flex;
+/* justify-content: space-ev; */
 }
 
 .hero-text {
