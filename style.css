@@ -12,11 +12,13 @@
   box-sizing: border-box;
   font-family: Consolas, sans-serif;
   background-color: black;
-
+}
 body, html {
   height: 100%;
 }
 body {
+    height: 100vh;
+    margin: 0;
   /* background-image: url(images/ironman3.jpg);
    background-repeat: no-repeat;
    background-size: cover;
@@ -44,6 +46,18 @@ header h2 {
   color: deepskyblue;
   font-family: 'Space Future', Consolas, sans-serif;
   margin-left: 0;
+}
+
+button {
+  color: deepskyblue;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: 'Space Future', Consolas, sans-serif;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 1px solid deepskyblue;
+  cursor: pointer;
 }
 
 a {
@@ -126,14 +140,36 @@ display: flex;
     /* border: 2px solid red; */
 }
 
-.hero-text h2, .hero-text p {
+.hero-text h2{
   font-size: 2.5rem;
+  text-align: left;
   /* display: inline-block; */
+  
 }
+
+.typing-text {
+  font-size: 2rem; /* Adjust the font size as needed */
+  line-height: 1.5; /* Ensures proper line spacing */
+}
+
+.hero
 
 .hero-text h2{
   margin-top: 100px;
   margin-left: 50vh;
+}
+
+.hero-text h2 span {
+  font-family: 'Space Future', Consolas, sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.typing-text .technologist {
+  display: block; /* Makes "Technologist" appear on a new line */
+  margin-top: 10px; /* Adds some spacing above "Technologist" */
+  font-weight: bold; /* Makes it bold for emphasis (optional) */
+  font-size: 2.5rem; /* You can adjust this to make it more prominent */
 }
 
 .hero-text p {
