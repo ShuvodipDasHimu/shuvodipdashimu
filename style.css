@@ -73,9 +73,24 @@ a {
   border: 1px solid deepskyblue;
 }
 
+.nav-menu ul li a:hover {
+  background-color: deepskyblue;
+  color: black;
+}
+
+.nav-links a.active {
+  color: deepskyblue; /* Text color for the current page */
+  background-color: black; /* Background color */
+  border: 3px solid white; /* Optional border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for consistent appearance */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+
 .nav-links {
   display: flex;
-  gap: 1em;
+  /* gap: 1em; */
   font-size: 18px;
 }
 

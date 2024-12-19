@@ -6,3 +6,13 @@ const navLinks = document.getElementById('js-nav-links');
 navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active'); // Toggle the "active" class
 });
+
+// Highlight current page link
+const navLinks = document.querySelectorAll('.nav-links a');
+const currentPage = window.location.pathname;
+
+navLinks.forEach(link => {
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('active');
+  }
+});
