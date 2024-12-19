@@ -11,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Consolas, sans-serif;
-}
+  background-color: black;
 
 body, html {
   height: 100%;
@@ -98,34 +98,56 @@ a {
 main {
 /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/High-Tech-HD-Wallpapers.jpg); */
 background-color:black;
-height: 100%;
 background-size: cover;
-  color: deepskyblue;
-  border: 2px solid deepskyblue;
+height: 100%;
+margin-top: 70px;
 }
 
-#hero-text {
-}
-.hero-section {
-  display: flex;
-  align-items: center;
+/* .hero-section {
+  display: inline-block;
+  align-items: center;  
   justify-content: center;
-  background-color:black;
-  height: 100%;
-  text-align: center;
+  background-color: black;
+  color: deepskyblue;
+  height: 100vh; 
+  gap: 20;
+}  
+*/
+
+.hero-section {
+display: flex;
 }
 
 .hero-text {
   color: white;
-  margin-left: 40px;
-  margin-top: 2px;
+  width: 50%;
+    float: left;
+    padding: 20px;
+    /* border: 2px solid red; */
+}
+
+.hero-text h2, .hero-text p {
+  font-size: 2.5rem;
+  /* display: inline-block; */
+}
+
+.hero-text h2{
+  margin-top: 100px;
+  margin-left: 50vh;
+}
+
+.hero-text p {
+  margin-left: 50vh;
+}
+
+.hero-image {
+  flex-shrink: 0;  /* Prevent image from shrinking */
 }
 
 .ai-gen-shuvodip {
-  width: 500px;
-  float: right;
-  margin-right: 20px;
-  background-color: black;
+  
+  width: 30%;  /* Adjust the width of the image */
+  height: auto;  /* Maintain aspect ratio */
 }
 
 
