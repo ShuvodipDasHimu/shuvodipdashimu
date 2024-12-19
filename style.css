@@ -119,26 +119,54 @@ background-size: cover;
   .nav-links {
     display: none;
     flex-direction: column;
+    align-items: center; /* Center the links */
+    justify-content: center;
     background-color: black;
     position: absolute;
     top: 70px; /* Position just below the header */
     right: 0;
-    width: 200px;
+    left: 0; /* Center the menu horizontally */
+    margin: auto;
+    width: 90%; /* Make the menu wider */
     border: 1px solid deepskyblue;
     z-index: 1000;
-    padding: 1em;
+    padding: 1.5em;
+    opacity: 0; /* For transition effect */
+    transform: translateY(-20px); /* Start with a slight upward offset */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animation */
   }
 
   /* Show the navigation links when active */
   .nav-links.active {
     display: flex;
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Slide into place */
   }
 
-  /* Display the hamburger icon */
+  /* Hamburger Icon */
   .nav-toggle {
     display: block;
     font-size: 2rem;
     color: deepskyblue;
     cursor: pointer;
+  }
+
+  /* Styling the nav-links for better visibility */
+  .nav-links li {
+    margin: 10px 0; /* Add spacing between menu items */
+  }
+
+  .nav-links a {
+    font-size: 1.2rem; /* Larger font size */
+    padding: 10px 15px; /* Adjust padding */
+    color: white; /* Menu text color */
+   /* Button-style background */
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease; /* Hover effect */
+  }
+
+  .nav-links a:hover {
+    background-color: darkblue; /* Change color on hover */
   }
 }
