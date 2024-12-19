@@ -73,6 +73,12 @@ a {
   border: 1px solid deepskyblue;
 }
 
+.nav-links {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
 main {
 /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/High-Tech-HD-Wallpapers.jpg); */
 background-color:black;
@@ -106,27 +112,33 @@ background-size: cover;
   margin-right: 20px;
 }
 
+
+/* MOBILE STYLES */
 @media (max-width: 768px) {
-  * {
-    background-color: black;
-  }
-  .hero-section {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .hero-text {
-    margin-left: 0;
-  }
-  .ai-gen-shuvodip {
-    width: 100%;
-    float: none;
-    margin-right: 0;
-  }
+  /* Hide the navigation links by default */
   .nav-links {
     display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 70px; /* Position just below the header */
+    right: 0;
+    width: 200px;
+    border: 1px solid deepskyblue;
+    z-index: 1000;
+    padding: 1em;
   }
-  .nav-toggle {
+
+  /* Show the navigation links when active */
+  .nav-links.active {
     display: flex;
+  }
+
+  /* Display the hamburger icon */
+  .nav-toggle {
+    display: block;
+    font-size: 2rem;
     color: deepskyblue;
+    cursor: pointer;
   }
 }
