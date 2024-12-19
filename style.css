@@ -105,3 +105,28 @@ background-size: cover;
   float: right;
   margin-right: 20px;
 }
+
+@media (max-width: 768px) {
+  * {
+    background-color: black;
+  }
+  .hero-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero-text {
+    margin-left: 0;
+  }
+  .ai-gen-shuvodip {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-toggle {
+    display: flex;
+    color: deepskyblue;
+  }
+}
